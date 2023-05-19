@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-rl5BC8z6W9Gv7gBZD5M6i8uFw4Koi3kmegAu1GUVVpKnRkW0SvDF2vnuyFNzYgP+k8eH4j7fzmG+18yjnM6Rng==" crossorigin=""/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha384-b5HzkYZa0LeP5oQd6Jn1X9jIXFzYQuhf+Jv6eWXYn8nU6j+amFFZvAzfmaWJX8Tb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+        <link rel="stylesheet" href="./css/styles.css"  />
+        <!-- JQuery school dropdown autocomplete -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <!-- Sørensen-Dice coefficient -->
+        <script src="https://cdn.jsdelivr.net/npm/string-similarity/umd/string-similarity.min.js"></script>
+
+        <!-- Goolgle Fonts, Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+
+        <style>
+/* school-dropdown */
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    cursor: default;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="mapProps">
+                <div class = "filterBtn"></div>
+                <!-- <div>
+                    <button class = "Props">Share</button>
+                </div> -->
+                <div class="navButton"></div>
+                <div class = "centreBtn"></div>
+                <div class= "savedSchools">
+                    <button class = "Props" id="savedSchools">Saved Schools</button>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <!-- <script src="js/leaflet.rotatedMarker.js"></script> -->
+        <!-- <script src="js/leaflet.pattern.js"></script> -->
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <!-- <script src="js/rbush.min.js"></script> -->
+        <!-- <script src="js/labelgun.min.js"></script> -->
+        <!-- <script src="js/labels.js"></script> -->
+        <!-- <script src="js/leaflet-measure.js"></script> -->
+        <script src="data/school_girls_1.js"></script>
+        <script src="data/school_boys_2.js"></script>
+        <script src="data/school_coed_3.js"></script>
+        <script src="data/park_4.js"></script>
+        <script src="data/amenity_parking_5.js"></script>
+        <script src="data/bus_stop_6.js"></script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-wvBZD6EYf+du8MwOss+gxwejJccfexNYOmVT2Ro0X+OaOJjKWez1fR8OhRt0xvQ2L0JhPjzTlTqah3ylz0VKgA==" crossorigin=""></script> -->
+        <!--Search for schools-->
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script> 
+        <!-- <script type="text/javascript" src="./js/leaflet-seacher.js"></script> -->
+        <!-- <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script> -->
+        <script src="index.js"></script> <!-- Map -->
+        
+    </body>
+</html>
+
+
+

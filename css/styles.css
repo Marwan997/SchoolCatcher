@@ -1,0 +1,91 @@
+body{
+    margin: 0%;
+}
+
+.container{
+    display: flex;
+    background-color: black;
+}
+
+#map {
+    width: 100%;
+    height:100vh;
+    float: left;
+}
+
+.mapProps {
+    width: 20%;
+    height: 100vh;
+    float: left;
+    margin: 0;
+    text-align: center;
+    background-color: darkgreen;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Props {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    margin-bottom: 10%;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.Props:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.Props:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.notification {
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
+    background-color: rgb(231, 177, 0);
+    padding: 5px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.savedSchoolsTable{
+    text-align: center;
+    font-family:'Montserrat', sans-serif; ;
+}
+.row{
+    border-top: 2px solid rgb(104, 104, 104);
+    border-bottom: 2px solid rgb(104, 104, 104);
+}
